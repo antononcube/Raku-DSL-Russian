@@ -1,0 +1,37 @@
+{
+  "name": "DSL::Russian",
+  "description": "Computational workflows building by natural language commands in Russian.",
+  "version": "0.1.0",
+  "perl": "6.d",
+  "authors": [
+    "Anton Antonov"
+  ],
+  "auth": "zef:antononcube",
+  "depends": [
+    "DSL::Shared:ver<0.1.2+>",
+    "DSL::English::ClassificationWorkflows:<0.8.0+>",
+    "DSL::English::DataQueryWorkflows:ver<0.5.9+>",
+    "DSL::English::LatentSemanticAnalysisWorkflows:ver<0.8.0+>",
+    "DSL::English::QuantileRegressionWorkflows:<0.8.0+>",
+    "DSL::English::RecommenderWorkflows:<0.8.0+>"
+  ],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "DSL::Russian::DataQueryWorkflows::Grammar": "lib/DSL/Russian/DataQueryWorkflows/Grammar.rakumod",
+    "DSL::Russian::DataQueryWorkflows::Grammar::DataQueryPhrases": "lib/DSL/Russian/DataQueryWorkflows/Grammar/DataQueryPhrases.rakumod"
+    },
+  "resources": [],
+  "license": "GPL-3.0-or-later",
+  "tags": [
+    "russian",
+    "dsl",
+    "parser",
+    "interpreter",
+    "monad",
+    "workflow",
+    "pipeline"
+  ],
+  "api": "1",
+  "source-url": "https://github.com/antononcube/Raku-DSL-Russian.git"
+}

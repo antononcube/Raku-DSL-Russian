@@ -1,0 +1,60 @@
+use DSL::Shared::Utilities::DeterminedWordsMatching;
+
+# Data query specific phrases
+role DSL::Russian::DataQueryWorkflows::Grammar::DataQueryPhrases {
+    # Tokens
+    token arrange-verb { 'расставить' }
+    token ascending-adjective { 'восходящий' }
+    token association-noun { 'ассоциация' }
+    token broad-adjective { 'широкая' }
+    token cast-verb { 'формировать' }
+    token character-noun { 'символ' }
+    token combine-verb { 'комбайн' }
+    token cross-adjective { 'перекрестные ссылки' | 'перекрестные ссылки' | 'перекрестные ссылки' | 'перекрещенные' | 'крест' }
+    token cross-verb { 'крестообразная поверхность'  }
+    token descending-adjective { 'убывающий' }
+    token distinct-adjective { 'уникальный' | 'уникальные' }
+    token divider-noun { 'разделитель' }
+    token duplicate-adjective { 'продублировано' | 'повторный' }
+    token duplicates-noun { 'продублировано' | 'повторные' }
+    token form-noun { 'форма' }
+    token format-noun { 'формат' }
+    token formula-noun { 'формула' }
+    token full-adjective { 'полный' | 'полный' | 'полное' }
+    token glimpse-verb { 'взглянуть' | 'соски' }
+    token group-verb { 'сгруппировать' | 'группировать' }
+    token inner-adjective { 'внутренний' | 'внутренний' | 'внутри' }
+    token keep-verb { 'сохранить' | 'держать' | 'держите' | 'сохраните' }
+    token long-adjective { 'длинный' | 'длинный' | 'длинный' }
+    token longer-adjective { 'по-дълъг' | 'по-дълга' | 'по-дълго' | 'по-дълги' }
+    token map-verb { 'ассоциировать' }
+    token mapping-noun { 'ассоциирование' }
+    token melt-verb { 'расплав' }
+    token merge-noun { 'слияние' }
+    token merge-verb { 'слить' }
+    token mutate-verb { 'мутировать' }
+    token narrow-adjective { 'узкий' | 'узкая' | 'узкое' }
+    token omit-directive { 'пропустить' | 'отключен' }
+    token only-adverb { 'только' }
+    token order-verb { 'заказать'  }
+    token pivot-verb { 'развивать' | 'расслабиться' }
+    token rename-verb { 'переименовать' }
+    token safe-adjective { 'безопасный' }
+    token safely-adverb { 'уверенное' }
+    token select-verb { 'выберите' }
+    token semi-adjective { 'полу' }
+    token separator-noun { 'разделитель' }
+    token skim-verb { 'обзор' }
+    token skimming-noun { 'просмотреть' }
+    token sort-verb { 'сортировать' | 'заказать' }
+    token splitter-noun { 'разделитель' }
+    token splitting-noun { 'сплит' }
+    token summarise-verb { 'обобщить' }
+    token summarize-verb { 'обобщить' }
+    token tabulate-verb { 'табулировать' }
+    token tabulation-noun { 'табуляция' | 'табуляция' }
+    token ungroup-verb { 'разгруппировать' }
+    token unique-adjective { 'уникальный' | 'уникальные' }
+    token wide-adjective { 'широкая' }
+    token wider-adjective { 'по-широк' |  'по-широка' | 'по-широко' |  'по-широки' }
+}

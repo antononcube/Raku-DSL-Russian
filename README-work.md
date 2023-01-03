@@ -30,43 +30,6 @@ for <Bulgarian English Python::pandas Raku::Reshapers Spanish> -> $t {
    say ToDataQueryWorkflowCode($command, $t, language => 'Russian', format => 'code');
 }
 ```
-```
-# ============================================================
-# Bulgarian
-# ------------------------------------------------------------
-# зареди таблицата: "iris"
-# вземи елементите от 1 до 120 със стъпка 3
-# групирай с колоните: Species
-# покажи броя
-# ============================================================
-# English
-# ------------------------------------------------------------
-# load the data table: "iris"
-# take elements from 1 to 120 with step 3
-# group by the columns: Species
-# show the count(s)
-# ============================================================
-# Python::pandas
-# ------------------------------------------------------------
-# obj = example_dataset('iris')
-# obj = obj.iloc[1-1:120:3]
-# obj = obj.groupby(["Species"])
-# print(obj.size())
-# ============================================================
-# Raku::Reshapers
-# ------------------------------------------------------------
-# my $obj = example-dataset('iris') ;
-# $obj = $obj[ (1 - 1), (1 + 3 - 1) ... (120 - 1) ] ;
-# $obj = group-by($obj, "Species") ;
-# say "counts: ", $obj>>.elems
-# ============================================================
-# Spanish
-# ------------------------------------------------------------
-# cargar la tabla: "iris"
-# tomar los elementos de 1 a 120 con el paso 3
-# agrupar con columnas: "Species"
-# mostrar recuentos
-```
 
 -------
 
