@@ -19,8 +19,10 @@
   "test-depends": [],
   "provides": {
     "DSL::Russian::DataQueryWorkflows::Grammar": "lib/DSL/Russian/DataQueryWorkflows/Grammar.rakumod",
-    "DSL::Russian::DataQueryWorkflows::Grammar::DataQueryPhrases": "lib/DSL/Russian/DataQueryWorkflows/Grammar/DataQueryPhrases.rakumod"
-    },
+    "DSL::Russian::DataQueryWorkflows::Grammar::DataQueryPhrases": "lib/DSL/Russian/DataQueryWorkflows/Grammar/DataQueryPhrases.rakumod",
+    "DSL::Russian::LatentSemanticAnalysisWorkflows::Grammar": "lib/DSL/Russian/LatentSemanticAnalysisWorkflows/Grammar.rakumod",
+    "DSL::Russian::LatentSemanticAnalysisWorkflows::Grammar::LatentSemanticAnalysisPhrases": "lib/DSL/Russian/LatentSemanticAnalysisWorkflows/Grammar/LatentSemanticAnalysisPhrases.rakumod"
+  },
   "resources": [],
   "license": "GPL-3.0-or-later",
   "tags": [

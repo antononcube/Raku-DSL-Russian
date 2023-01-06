@@ -1,0 +1,57 @@
+use v6;
+
+use DSL::Shared::Utilities::DeterminedWordsMatching;
+use DSL::Shared::Roles::Russian::PipelineCommand;
+
+# Latent Semantic Analysis (LSA) phrases
+role DSL::Russian::LatentSemanticAnalysisWorkflows::Grammar::LatentSemanticAnalysisPhrases
+        does DSL::Shared::Roles::English::PipelineCommand {
+
+    # LSA specific
+    token analysis-noun { 'анализ' }
+    token component-noun { 'компонент' }
+    token decomposition-noun { 'декомпозиция' }
+    token entries-noun { 'элементы' | 'ячейки' }
+    token factorization-noun { 'факторизация' }
+    token independent-adjective { 'независимый' | 'независимая' | 'независимое' | 'независимые'}
+    token indexing-noun { 'индексирование' }
+    token item-noun { 'щука' }
+    token items-noun { 'щук' }
+    token latent-adjective { 'латентентый' | 'латентная' | 'латентное' }
+    token negative-adjective { 'отрицателеный' | 'отрицателная' | 'отрицателное' | 'отрицателеные' }
+    token nonnegative-adjective { [ 'не' | 'не-' ] \h* <negative-adjective> }
+    token partition-noun { 'разбивание' }
+    token principal-adjective { 'главный' | 'главная' | 'главное' }
+    token query-noun { 'запрос' }
+    token rules-noun { 'правила' }
+    token semantic-adjective { 'семантиченый' | 'семантичная' | 'семантичное' | 'семантичные' }
+    token singular-adjective { 'сингулярный' | 'сингулярная' | 'сингулярное' | 'сингулярные' }
+    token stemming-noun { 'столбцов' }
+    token stop-adjective { 'стоп' }
+    token stop-noun { 'стоп' | 'остановка' }
+    token synonym-noun { 'синоним' }
+    token synonyms-noun { 'синонимы' }
+    token term-noun { 'термин' }
+    token terms-noun { 'термины' }
+    token thesaurus-noun { <dictionary-noun> | <interpreter-noun> | <interpreting-adjective> \h+ <dictionary-noun> }
+    token topic-noun { 'тема' }
+    token topics-noun { 'темы' | 'тем' }
+
+    # Document term matrix creation related
+    rule data-element { 'предложение' | 'параграф' | 'секция' | 'глава' | <word-noun> }
+    rule data-elements { 'предложения' | 'параграфи' | 'секции' | 'глави' | <words-noun> }
+
+    # Topics and thesaurus
+    rule statistical-thesaurus-phrase { <statistical>? <thesaurus-noun> }
+    rule topics-table-phrase { <table-noun> [ 'с' | 'от' | 'на' ] <topics-noun> }
+
+    # LSI specific
+    token frequency-noun { 'честота' }
+    token global-adjective { 'глобаленый' | 'глобалное' }
+    token inverse-adjective { 'обратеный' | 'обратное' }
+    token local-adjective { 'локалный' | 'локалное' }
+    token normalization-noun { 'нормализация' | 'нормализирование' }
+    token normalizer-noun { 'нормализатор' }
+    token normalizing-noun { 'нормализирование' }
+
+}
