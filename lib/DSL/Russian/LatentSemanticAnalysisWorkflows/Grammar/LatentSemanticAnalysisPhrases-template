@@ -47,9 +47,9 @@ role DSL::Russian::LatentSemanticAnalysisWorkflows::Grammar::LatentSemanticAnaly
 
     # LSI specific
     token frequency-noun { 'честота' }
-    token global-adjective { 'глобаленый' | 'глобалное' }
-    token inverse-adjective { 'обратеный' | 'обратное' }
-    token local-adjective { 'локалный' | 'локалное' }
+    token global-adjective { 'глобальный' | 'глобальная' | 'глобальное' | 'глобальные' }
+    token inverse-adjective { 'обратеный' | 'обратная' | 'обратное' | 'обратеные' }
+    token local-adjective { 'локалный' | 'локалная' | 'локалное' | 'локалные' }
     token normalization-noun { 'нормализация' | 'нормализирование' }
     token normalizer-noun { 'нормализатор' }
     token normalizing-noun { 'нормализирование' }

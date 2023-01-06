@@ -47,9 +47,9 @@ role DSL::Russian::LatentSemanticAnalysisWorkflows::Grammar::LatentSemanticAnaly
 
     # LSI specific
     token frequency-noun:sym<Russian> { :i 'честота' | ([\w]+) <?{ is-ru-fuzzy-match($0.Str, 'честота', 2) }> }
-    token global-adjective:sym<Russian> { :i  'глобаленый' | 'глобалное'  }
-    token inverse-adjective:sym<Russian> { :i  'обратеный' | 'обратное'  }
-    token local-adjective:sym<Russian> { :i  'локалный' | 'локалное'  }
+    token global-adjective:sym<Russian> { :i  'глобальный' | 'глобальная' | 'глобальное' | 'глобальные'  }
+    token inverse-adjective:sym<Russian> { :i  'обратеный' | 'обратная' | 'обратное' | 'обратеные'  }
+    token local-adjective:sym<Russian> { :i  'локалный' | 'локалная' | 'локалное' | 'локалные'  }
     token normalization-noun:sym<Russian> { :i  'нормализация' | 'нормализирование'  }
     token normalizer-noun:sym<Russian> { :i 'нормализатор' | ([\w]+) <?{ is-ru-fuzzy-match($0.Str, 'нормализатор', 2) }> }
     token normalizing-noun:sym<Russian> { :i 'нормализирование' | ([\w]+) <?{ is-ru-fuzzy-match($0.Str, 'нормализирование', 2) }> }
