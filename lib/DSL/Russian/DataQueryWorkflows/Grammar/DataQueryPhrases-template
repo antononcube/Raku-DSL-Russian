@@ -10,8 +10,8 @@ role DSL::Russian::DataQueryWorkflows::Grammar::DataQueryPhrases {
     token cast-verb { 'формировать' }
     token character-noun { 'символ' }
     token combine-verb { 'комбайн' }
-    token cross-adjective { 'перекрестные ссылки' | 'перекрестные ссылки' | 'перекрестные ссылки' | 'перекрещенные' | 'крест' }
-    token cross-verb { 'крестообразная поверхность'  }
+    token cross-adjective { 'перекрестные' \h+ 'ссылки' | 'перекрестные' \h+ 'ссылки' | 'перекрестные' \h+ 'ссылки' | 'перекрещенные' | 'крест' }
+    token cross-verb { 'крестообразная' \h+ 'поверхность'  }
     token descending-adjective { 'убывающий' }
     token distinct-adjective { 'уникальный' | 'уникальные' }
     token divider-noun { 'разделитель' }
