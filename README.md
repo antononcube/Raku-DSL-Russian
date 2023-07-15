@@ -55,7 +55,7 @@ for <Bulgarian English Python::pandas Raku::Reshapers Spanish> -> $t {
 # ============================================================
 # Raku::Reshapers
 # ------------------------------------------------------------
-# my $obj = example-dataset('iris') ;
+# $obj = example-dataset('iris') ;
 # $obj = $obj[ (1 - 1), (1 + 3 - 1) ... (120 - 1) ] ;
 # $obj = group-by($obj, "Species") ;
 # say "counts: ", $obj>>.elems
@@ -85,7 +85,7 @@ for <Bulgarian English Python::pandas Raku::Reshapers Spanish> -> $t {
 ### Packages
 
 [AAp1] Anton Antonov,
-[DSL::Russian, Raku package](https://github.com/antononcube/Raku-DSL-Russian),
+[DSL::Bulgarian, Raku package](https://github.com/antononcube/Raku-DSL-Bulgarian),
 (2022),
 [GitHub/antononcube](https://github.com/antononcube).
 
@@ -120,6 +120,6 @@ for <Bulgarian English Python::pandas Raku::Reshapers Spanish> -> $t {
 [GitHub/antononcube](https://github.com/antononcube).
 
 [AAp8] Anton Antonov,
-[DSL::English::QuantileRegressionWorkflows, Raku package](https://github.com/antononcube/Raku-DSL-General-RecommenderWorkflows),
+[DSL::English::RecommenderWorkflows, Raku package](https://github.com/antononcube/Raku-DSL-General-RecommenderWorkflows),
 (2018-2022),
 [GitHub/antononcube](https://github.com/antononcube).
